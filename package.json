@@ -6,7 +6,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_PATH=$NODE_PATH:./shared node --harmony ."
+    "start": "NODE_PATH=$NODE_PATH:./shared node --harmony .",
+    "dev": "npm run start & webpack-dev-server --progress --color",
+    "build": "NODE_ENV=production webpack --progress --color -p --config webpack.prod.config.js"
   },
   "keywords": [
     "react",
@@ -19,6 +21,7 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.13.4",
+    "history": "^1.9.1",
     "react": "^15.0.2",
     "react-dom": "^15.0.2",
     "react-redux": "^4.4.5",
