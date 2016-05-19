@@ -1,1 +1,3 @@
-not quite finished yet
+npm install
+npm run dev
+access localhost:8080/home to test
