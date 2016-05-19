@@ -14,5 +14,3 @@ export default function TodoReducer(state = defaultState, action) {
             return state;
     }
 }
-
-export { default as todos } from './TodoReducer';
