@@ -7,7 +7,7 @@ import routes                    from 'routes';
 
 import { createStore, combineReducers } from 'redux';
 import { Provider }                     from 'react-redux';
-import * as reducers;                   from 'reducers';
+import * as reducers                    from 'reducers';
 
 const app = express();
 
